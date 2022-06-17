@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&display=swap');
 
 *{
   padding: 0;
@@ -29,7 +31,7 @@ header > .link{
 }
 
 button{
-  margin-top: 3.5em;
+  margin-top: 3em;
   padding: 10px 20px;
   border-radius: 30px;
   border: none;
@@ -48,11 +50,11 @@ button:hover{
 
 h3{
   color: hsl(0, 0%, 95%);
-  font-family: 'Big Shoulders Display', cursive;
-  margin: 20px 0;
+  font-family: 'big shoulders display';
+  margin: 15px 0;
   font-weight: 700;
   padding-top: 10px;
-  font-size: 15px;
+  font-size: 30px;
 }
 
 p{
