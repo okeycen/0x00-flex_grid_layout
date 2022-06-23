@@ -1,54 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
 
 
-.content{
-    padding: 20px;
-    margin-top: 20px;
-    align-items: center;
-    justify-content: center;
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+header{
+    min-height: 10vh;
 }
-.container{
-    width: 100%;
-    max-width: 1440px;
+.m-body{
+    min-height: 90vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    flex-flow: wrap;
+    justify-content: center;
+    color: hsl(0, 0%, 95%);
+    padding: 0 25rem;
+}
+
+#switch p{
+    text-align: center;
+}
+
+.cards{
+    width: 750px;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+.cardItem{
+    padding: 40px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 30px;
+}
+
+.cardItem h2{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+}
+
+.cardItem p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    flex-grow: 1;   /* makes p element to take any available space */
+}
+
+.cardItem button{
+    background-color: hsl(0, 0%, 95%);
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    /* transition: background-color 0.3s ease; */
+}
+
+.cardItem button:hover{
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+    padding: 6px 18px;
+    color: hsl(0, 0%, 95%);
+}
+
+.first-card{
+    background-color: hsl(31, 77%, 52%);
+}
+.first-card button{
+    color: hsl(31, 77%, 52%);
+}
+
+.second-card{
+    background-color: hsl(184, 100%, 22%);
+}
+.second-card button{
+    color: hsl(184, 100%, 22%);
+}
+
+.third-card{
+    background-color: hsl(179, 100%, 13%);
+}
+.third-card button{
+    color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 650px){
+    .m-body{
+        padding: 8rem 25rem;
+    }
+    .cards{
+       flex-direction: column;        
+    }
+
+    .cardItem{
+        padding: 3rem 4rem;
+    }
 }
 
 
-.container > div {
-    width: 270px;
-    padding: 20px;
-    margin-top: 40px;
-    min-height: 400px;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .container > div:nth-child(1){
-    background-color: hsl(31, 77%, 52%);
-   
-  }
-  
-  .container > div:nth-child(2){
-    background-color: hsl(184, 100%, 22%);
-  }
-  
-  .container > div:nth-child(3){
-    background-color: hsl(179, 100%, 13%);
-  }
-
-  .sedan-btn{
-    color: hsl(31, 77%, 52%);
-    
-  }
-
-  .suv-btn{
-    color: hsl(184, 100%, 22%);
-  
-  }
-
-  .luxury-btn{
-    color: hsl(179, 100%, 13%);
-   
-  }
